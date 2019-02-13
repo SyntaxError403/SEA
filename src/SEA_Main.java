@@ -83,13 +83,8 @@ public class SEA_Main {
 	
 		public void encrypt(String input,BigInteger prime) {
 		
-			
-			
-			
 			byte [] bytes = input.getBytes(Charset.forName("UTF-8"));
 			
-		// System.out.println(prime.intValue());
-			 
 			while (x<bytes.length) {
 				bytes[x] +=   prime.mod(n).intValue() ;
 				x++;
@@ -100,13 +95,11 @@ public class SEA_Main {
 			
 			String output = new String(bytes,Charset.forName("UTF-8"));
 			output = Base64.encode(bytes);
-			//System.out.println(duration);
 			System.out.println(output);
 			}	
 	
 	}	
-		
-
+	
 	class Decryption extends encryption_variables{
 		
 		public  void decrpt(BigInteger prime)  {
@@ -124,12 +117,8 @@ public class SEA_Main {
 				de2[x] -=   prime.mod(n).intValue() ;
 				x++;
 				n = n.nextProbablePrime();
-				
-				
 				}
 			String deoutput = new String(de2,Charset.forName("UTF-8"));
-			
-			//System.out.println(duration);
 			System.out.println(deoutput);
 			
 		}
