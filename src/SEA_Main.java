@@ -106,6 +106,7 @@ public class SEA_Main {
 			
 			String de ="eG5qgmYjgnJ4iJgoQnpWeWR1iEF3nK+As22cZqC+aOPtjG9ijZ2VciKflwxQeSeWlw6kivk+hA==" ;
 			byte[] de2 = null;
+			
 			try {
 				de2 = Base64.decode(de);
 			} catch (Base64DecodingException e) {
