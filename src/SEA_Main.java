@@ -119,6 +119,8 @@ public class SEA_Main {
 				x++;
 				n = n.nextProbablePrime();
 				}
+			
+			
 			String deoutput = new String(de2,Charset.forName("UTF-8"));
 			System.out.println(deoutput);
 		}
