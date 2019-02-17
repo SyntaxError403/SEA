@@ -104,7 +104,7 @@ public class SEA_Main {
 		
 		public  void decrpt(BigInteger prime)  {
 			
-			String de ="eG5qgmYjgnJ4iJgoQnpWeWR1iEF3nK+As22cZqC+aOPtjG9ijZ2VciKflwxQeSeWlw6kivk+hA==" ;
+			String de ="" ;
 			byte[] de2 = null;
 			
 			try {
